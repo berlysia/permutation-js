@@ -1,15 +1,121 @@
 {
   "name": "permutation-js",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "main": "./dist/commonjs/index.js",
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tshy && vite build",
+    "test": "vitest",
+    "test:watch": "vitest watch",
+    "prepare": "tshy"
   },
   "devDependencies": {
-    "typescript": "~5.7.2",
-    "vite": "^6.1.0"
-  }
+    "prettier": "3.5.1",
+    "tshy": "3.0.2",
+    "typescript": "5.7.3",
+    "vite": "6.1.0",
+    "vitest": "3.0.5"
+  },
+  "tshy": {
+    "selfLink": false,
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/index.ts",
+      "./nextPermutations": "./src/nextPermutations.ts",
+      "./permutations": "./src/permutations.ts",
+      "./readonly": "./src/readonly.ts",
+      "./defaultComparator": "./src/defaultComparator.ts",
+      "./allPermutations": "./src/allPermutations/index.ts",
+      "./allPermutations/readonly": "./src/allPermutations/readonly.ts",
+      "./allPermutations/dfs": "./src/allPermutations/dfs.ts"
+    }
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/index.d.ts",
+        "default": "./dist/commonjs/index.js"
+      }
+    },
+    "./nextPermutations": {
+      "import": {
+        "types": "./dist/esm/nextPermutations.d.ts",
+        "default": "./dist/esm/nextPermutations.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/nextPermutations.d.ts",
+        "default": "./dist/commonjs/nextPermutations.js"
+      }
+    },
+    "./permutations": {
+      "import": {
+        "types": "./dist/esm/permutations.d.ts",
+        "default": "./dist/esm/permutations.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/permutations.d.ts",
+        "default": "./dist/commonjs/permutations.js"
+      }
+    },
+    "./readonly": {
+      "import": {
+        "types": "./dist/esm/readonly.d.ts",
+        "default": "./dist/esm/readonly.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/readonly.d.ts",
+        "default": "./dist/commonjs/readonly.js"
+      }
+    },
+    "./defaultComparator": {
+      "import": {
+        "types": "./dist/esm/defaultComparator.d.ts",
+        "default": "./dist/esm/defaultComparator.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/defaultComparator.d.ts",
+        "default": "./dist/commonjs/defaultComparator.js"
+      }
+    },
+    "./allPermutations": {
+      "import": {
+        "types": "./dist/esm/allPermutations/index.d.ts",
+        "default": "./dist/esm/allPermutations/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/allPermutations/index.d.ts",
+        "default": "./dist/commonjs/allPermutations/index.js"
+      }
+    },
+    "./allPermutations/readonly": {
+      "import": {
+        "types": "./dist/esm/allPermutations/readonly.d.ts",
+        "default": "./dist/esm/allPermutations/readonly.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/allPermutations/readonly.d.ts",
+        "default": "./dist/commonjs/allPermutations/readonly.js"
+      }
+    },
+    "./allPermutations/dfs": {
+      "import": {
+        "types": "./dist/esm/allPermutations/dfs.d.ts",
+        "default": "./dist/esm/allPermutations/dfs.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/allPermutations/dfs.d.ts",
+        "default": "./dist/commonjs/allPermutations/dfs.js"
+      }
+    }
+  },
+  "types": "./dist/commonjs/index.d.ts"
 }
