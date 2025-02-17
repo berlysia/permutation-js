@@ -1,6 +1,10 @@
 {
   "name": "permutation-js",
   "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berlysia/permutation-js"
+  },
   "type": "module",
   "main": "./dist/commonjs/index.js",
   "module": "./dist/esm/index.js",
