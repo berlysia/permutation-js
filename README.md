@@ -24,8 +24,16 @@ import {
 	permutationsReadonly,
 	allPermutations,
 	allPermutationsReadonly,
-	allPermutationsDFS,
 } from "permutation-js";
+```
+
+Or you can import each function individually:
+
+```javascript
+import permutations from "permutation-js/permutations";
+import permutationsReadonly from "permutation-js/permutationsReadonly";
+import allPermutations from "permutation-js/allPermutations";
+import allPermutationsReadonly from "permutation-js/allPermutationsReadonly";
 ```
 
 #### CommonJS
