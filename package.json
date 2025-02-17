@@ -29,9 +29,9 @@
     "exports": {
       "./package.json": "./package.json",
       ".": "./src/index.ts",
-      "./nextPermutations": "./src/nextPermutations.ts",
+      "./nextPermutation": "./src/nextPermutation.ts",
       "./permutations": "./src/permutations.ts",
-      "./readonly": "./src/readonly.ts",
+      "./permutations/readonly": "./src/readonly.ts",
       "./defaultComparator": "./src/defaultComparator.ts",
       "./allPermutations": "./src/allPermutations/index.ts",
       "./allPermutations/readonly": "./src/allPermutations/readonly.ts",
@@ -50,14 +50,14 @@
         "default": "./dist/commonjs/index.js"
       }
     },
-    "./nextPermutations": {
+    "./nextPermutation": {
       "import": {
-        "types": "./dist/esm/nextPermutations.d.ts",
-        "default": "./dist/esm/nextPermutations.js"
+        "types": "./dist/esm/nextPermutation.d.ts",
+        "default": "./dist/esm/nextPermutation.js"
       },
       "require": {
-        "types": "./dist/commonjs/nextPermutations.d.ts",
-        "default": "./dist/commonjs/nextPermutations.js"
+        "types": "./dist/commonjs/nextPermutation.d.ts",
+        "default": "./dist/commonjs/nextPermutation.js"
       }
     },
     "./permutations": {

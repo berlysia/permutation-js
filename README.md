@@ -31,9 +31,9 @@ Or you can import each function individually:
 
 ```javascript
 import permutations from "permutation-js/permutations";
-import permutationsReadonly from "permutation-js/permutationsReadonly";
+import permutationsReadonly from "permutation-js/readonly";
 import allPermutations from "permutation-js/allPermutations";
-import allPermutationsReadonly from "permutation-js/allPermutationsReadonly";
+import allPermutationsReadonly from "permutation-js/allPermutations/readonly";
 ```
 
 #### CommonJS
