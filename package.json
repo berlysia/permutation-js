@@ -11,7 +11,7 @@
     "build": "tshy && vite build",
     "test": "vitest",
     "test:watch": "vitest watch",
-    "prepare": "tshy"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "prettier": "3.5.1",
