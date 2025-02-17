@@ -31,7 +31,7 @@
       ".": "./src/index.ts",
       "./nextPermutation": "./src/nextPermutation.ts",
       "./permutations": "./src/permutations.ts",
-      "./permutations/readonly": "./src/readonly.ts",
+      "./readonly": "./src/readonly.ts",
       "./defaultComparator": "./src/defaultComparator.ts",
       "./allPermutations": "./src/allPermutations/index.ts",
       "./allPermutations/readonly": "./src/allPermutations/readonly.ts",
